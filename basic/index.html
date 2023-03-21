@@ -56,6 +56,14 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <br>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481726.8875282603!2d-99.42382123247643!3d19.391166840875727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0026db097507%3A0x54061076265ee841!2sMexico%20City%2C%20CDMX%2C%20Mexico!5e0!3m2!1sen!2sus!4v1679435089321!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+    <br>
+    <canvas id="myCanvas" width="400" height="100" style="border:3px solid #ff0000;">
+    </canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "40px Arial";
+        ctx.strokeText("This is a canvas!", 20, 40);
+        </script>
 </body>
 </html>
