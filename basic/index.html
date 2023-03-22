@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Webpage!</title>
     <style>
+        body{
+            background-color: lightblue;
+        }
         h1{
             color: blue;
             text-align: center;
@@ -44,7 +47,13 @@
             margin-left: auto;
             margin-right: auto;
         }
+        img {
+  opacity: 0.1;
+}
 
+        img:hover {
+  opacity: 1.0;
+}
     </style>
 </head>
 
@@ -93,6 +102,7 @@
         var ctx = c.getContext("2d");
         ctx.font = "40px Arial";
         ctx.strokeText("This is a canvas!", 20, 40);
-        </script>
+    </script>
+
 </body>
 </html>
