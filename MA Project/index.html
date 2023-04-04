@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Genius</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #square{
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background-image: linear-gradient(rgb(190, 149, 3), rgb(69, 57, 1));
+            margin: auto;
+            rotate: -15deg;
+            position: relative; 
+            top: 65px;
+            left: 1000px;
+            text-align: center;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+            text-shadow: 1px 4px 2px rgba(0, 253, 0, 0.6);
+            color: rgb(57, 48, 0);
+            border: solid;
+            border-color: black;
+            animation: rotate 2s infinite alternate ease-in-out, slide 1s forwards ease-in-out;
+        }
+        #square2{
+            position:relative;
+            width: 75px;
+            height: 50px;
+            background-image: linear-gradient(rgb(3, 190, 103), rgb(0, 170, 255));
+            margin: auto;
+            rotate: -15deg;
+            position: relative; 
+            top: 70px;
+            left: 1000px;
+            text-align: center;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            font-size: 25px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+            text-shadow: 1px 4px 2px rgba(0, 253, 0, 0.6);
+            color: rgb(0, 15, 149);
+            border: solid;
+            border-color: black;
+            animation: rotate 2s infinite alternate ease-in-out, slide 1s forwards ease-in-out;
+        }
+
+        #moving_image{
+            border: white 5px solid;
+
+            margin-top: 70px;
+            position: absolute;
+            width: 48.95%;
+            animation: move_then_fade 1s linear forwards;
+
+        }
+        @keyframes move_then_fade{
+            0%{
+                transform: translateX(200%);
+                opacity: 0;
+            }
+            100%{
+                transform: translateX(100%);
+                opacity: 100;
+                
+            }
+        }
+
+        @keyframes rotate {
+            to {
+                rotate: 15deg;
+            }
+        }
+
+        @keyframes slide{
+            to {
+                left: 550px;
+            }
+        }
+        p, h3, h1{
+            background-color:  rgb(37, 37, 37);
+            color: white;
+            width: 50%;
+            border: solid white 5px;
+            padding: 10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            position: absolute;
+        }
+        .left{
+            text-align: left;
+            float: left;
+            padding: auto;
+            padding-left: 1px;
+            margin-top: -80px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="resource.html">Resource</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    
+    
+    <img src="images/mtb.jpg" alt="Dog" id="moving_image" width="400px">
+    <div id="square">MTB</div>
+    <div id="square2">Outside</div>
+    <div class="left">
+        <h1 style="margin-top: 450px;">Mountain Biking</h1>
+        <p style="color: white; width: 50%; background-color: rgb(37, 37, 37); border: solid white 5px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; padding: 10px;">My genius is <span style="font-weight: bolder;">Mountain Biking or MTB</span> for short. MTB has been my favorite sport for a while now as I have learned how to ride complex trails that contain different advanced features. Here is a table that
+        describes some of the features from easiest to hardest.</p>
+    </div>
+    <div class="left">
+        <table class="table" style="position: relative; margin-top: 130px;">
+            <tr>
+                <th>Easy</th>
+                <th>Medium</th>
+                <th>Hard</th>
+            </tr>
+            <tr>
+                <td>Turns</td>
+                <td>Jumps</td>
+                <td>Drops</td>
+            </tr>
+            <tr>
+                <td>Small Bumps</td>
+                <td>Medium-Large Size jumps</td>
+                <td>Wall Rides/Extra Large Jumps which are (10ft+)</td>
+            </tr>
+    </div>
+    <div>
+        <h3 style="margin-top: 280px;">Mountain biking is something that <span style="font-weight: bolder;">everyone</span> should atleast try once in their life. Mountain biking can be for people who just want to have a relaxed ride around the park to people who want to do the extreme which is 50-100ft jumps and drops. Mountain biking can be for almost all ages (4+). </h3>
+
+    </div>
+    
+
+</body>
+</html>

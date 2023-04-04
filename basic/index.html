@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Webpage!</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        body{
-            background-color: lightblue;
-        }
         h1{
             color: blue;
             text-align: center;
@@ -86,11 +84,64 @@
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 20px;
         }
+        #square{
+            width: 300px;
+            height: 300px;
+            background-color: teal;
+            margin: auto;
+            rotate: -45deg;
+            position: relative; 
+            left: 1000px;
+            animation: rotate 3s infinite alternate ease-in-out, slide 1s forwards ease-in-out;
+        }
+
+
+        @keyframes rotate {
+            to {
+                rotate: 45deg;
+            }
+        }
+
+        @keyframes slide{
+            to {
+                left: 0;
+            }
+        }
+        #animation_p{
+            animation: move_left_to_right 5s linear infinite;
+        }
+
+        @keyframes move_left_to_right{
+            0%{
+                transform: translateX(-100%)
+            }
+            100%{
+                transform: translateX(100%);
+            }
+        }
+        #moving_image{
+            width: 50%;
+            animation: move_then_fade 5s linear forwards;
+        }
+
+        @keyframes move_then_fade{
+            0%{
+                transform: translateX(-100%);
+            }
+            100%{
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 
-<body>
-
+<body>ransform
+    <ul class="nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Me</a></li>
+    </ul>
     <h1>Welcome to my web page!</h1>
     <p>We <em>will</em> learn how to design <strong>web pages</strong></p>
     <p style="color:red">Here are my favorite school <span class="span1">lunches</span></p>
@@ -148,6 +199,8 @@
         <p>These were my favorite things about my school</p>
         <h3>Thanks for reading bye!</h3>
     </div>
-
+    <div id="square"></div>
+    <p id="animation_p">This will move left to right</p>
+    <img src="Images/doggogogogo.jpg" alt="Dog" id="moving_image">
 </body>
 </html>
