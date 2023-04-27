@@ -97,7 +97,7 @@ ul.nav a:hover{
     grid-row: 4;
 }
 
-.header-paragraph{
+.footer{
     position: fixed;
     left: 0;
     bottom: 0;
