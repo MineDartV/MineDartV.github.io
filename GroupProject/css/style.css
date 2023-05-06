@@ -61,7 +61,7 @@ h1{
 
 .footer{
     text-align: center;
-    background-color: rgb(0, 147, 0);
+    background-color: rgb(0, 65, 0);
     left: 0;
     bottom: 0;
     position: fixed;
@@ -75,7 +75,7 @@ h1{
 }
 .grid-container{
     display: grid;
-    grid-template-columns: 35% 30% 35%;
+    grid-template-columns: 35% 35% 29.2%;
     grid-gap: 5px;
     margin-top: 20px;
 }
@@ -86,6 +86,7 @@ h1{
     color: white;
     font-size: 20px;
     padding: 5px;
+    margin: 0;
 }
 
 .Washington{
@@ -93,7 +94,7 @@ h1{
     grid-row: 1;
     text-align: center;
     background-color: rgb(0, 147, 0);
-    width: 98.5%;
+    width: 100%;
     font-size: 40px;
     color: rgb(68, 0, 255);
     text-shadow: 2px 2px gold;
