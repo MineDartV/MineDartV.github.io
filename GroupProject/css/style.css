@@ -5,7 +5,7 @@ body{
 
 .nav{
     position: relative;
-    width: 100%;
+    width: 99.7%;
     top: 150;
     left: 0;
     list-style-type: none;
@@ -50,7 +50,7 @@ h1{
     background-color: green;
     text-align: center;
     color: gold;
-
+    margin-top: -10px;
     margin-bottom: 0;
     padding: 10px;
     font-size: 50px;    
@@ -65,7 +65,7 @@ h1{
     left: 0;
     bottom: 0;
     position: fixed;
-    width: 75%;
+    width: 100%;
     padding: 5px;
     font-size: 20px;
     font-family: "madrone-std", serif;
@@ -75,8 +75,8 @@ h1{
 }
 .grid-container{
     display: grid;
-    grid-template-columns: 35% 35% 30%;
-    grid-gap: 10px;
+    grid-template-columns: 35% 30% 35%;
+    grid-gap: 5px;
     margin-top: 20px;
 }
 
@@ -84,8 +84,8 @@ h1{
     background-color: rgb(0, 147, 0);
     text-align: center;
     color: white;
-    font-size: 30px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 5px;
 }
 
 .Washington{
@@ -93,11 +93,28 @@ h1{
     grid-row: 1;
     text-align: center;
     background-color: rgb(0, 147, 0);
-
+    width: 98.5%;
     font-size: 40px;
     color: rgb(68, 0, 255);
     text-shadow: 2px 2px gold;
     font-weight: 900;
     
-    
+}
+
+.paragraph1{
+    grid-column: 1/span 2;
+    grid-row: 3;
+}
+
+.image1{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+p{
+    color: lightblue;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 2px 2px black;
+
 }
