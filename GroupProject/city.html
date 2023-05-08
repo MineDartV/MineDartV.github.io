@@ -56,7 +56,55 @@
             grid-column: 3;
             grid-row: 8;
         }
+/* NEW FEATURE */
+    .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 23px;
+    border: none;
+    cursor: pointer;
+    }
+
+ 
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    }
+
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #18f33c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+
+    .dropdown-content a:hover {background-color: #118129}
+
+
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+
+    .dropdown:hover .dropbtn {
+    background-color: #032405 /* NEW FEATURE */ !important;
+    }
     </style>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
     <h1>Cities</h1>
@@ -72,32 +120,53 @@
     <div class="grid-container">
         <div class="grid-item big-image-1"><img src="Images/skl1.jpg" alt="Seattle Skyline" style="width: 100%;"></div>
         <div class="grid-item main-title">
-    <P style="text-align: center; font-size: 35px;">Washingtions Cities</P>
+    <P style="text-align: center; font-size: 35px; color: rgb(96, 148, 218);">Washingtions Cities</P>
             <p>     
 Washington has many cities, but the three major cities that are referenced here are the city of Belvue, The city of Seattle, and the city of Tacoma. Washington has a lot of other cities, but the three listed here are often regarded as the most important. While not always regarded as one of the most importatnt states Washingtion is home to large collection of diffrenent major companies including Microsoft,Amazon, Costco,Starbuck, Boeing and so many more. While Washingtions cities may not be the largest they have still made an impact on the rest of the world.</p> 
 
         </div>
         <div class="grid-item big-image-2"><img src="Images/BSK1.jpg" alt="Belvue Skyline" style="width:100%"></div>
         <div class="grid-item smallleft-image-1"><img src="Images/bp1.jpg" alt="Bellvue Park" style="width:100%"></div>
-        <div class="gird-item middle-text1">
-            <p style="font-size: 30px;">Bellvue Washingtion</p>
-            <p>Text about Bellvue</p>
+        <div class="grid-item middle-text1">
+            <p style="font-size: 30px;color: rgb(96, 148, 218)">Bellvue Washingtion</p>
+            <p>Bellvue Washingtion is home to many companies and amazing locations. while not the biggest city in the state Belvue is packed with fun activites and amazing experences no mater where you look.</p>
         </div>
         <div class="grid-item smallright-image-1"><img src="Images/bp2.jpg" alt="Bellvue at night" style="width: 100%; height: 100%;"></div>
         <div class="grid-item big-image-3"><img src="Images/tp1" alt="Tacoma" style="width:100%; "></div>
-        <div class="gird-item left-text1">
-            <p style="font-size: 30px;">Tacoma WA</p>
-            <p>text about Tacoma</p>
-<p style="font-size: 28px;">Things to do in and around Tacoma</p>
+        <div class="grid-item left-text1">
+            <p style="font-size: 30px;color: rgb(96, 148, 218)">Tacoma WA</p>
+            <p>Tacoma Washingtion is one of the two larger cities in the state. it is home to the famous tacoma dome which houses many sports games and other events like concerts. tacoma is not often visited by tourests on their visits which is a shame becsue they miss an amazing city that Washingtion offers.</p>
+<p style="font-size: 28px;">
+    </p>
+    <div class="dropdown">
+        <button class="dropbtn">Things to do in and around Tacoma</button>
+        <div class="dropdown-content">
+          <a href="https://www.tacomadome.org/" target="_blank" >Visit the Tacoma dome</a>
+          <a href="https://www.traveltacoma.com/tacoma-glass-art/" target="_blank">Visit a glass art museum</a>
+          <a href="https://www.metroparkstacoma.org/place/point-defiance-park/" target="_blank">Visit Point Defiance Park</a>
+        </div>
+      </div>
+      
         </div>
         <div class="grid-item smallmiddle-image-1"><img src="Images/tp2.jpg" alt="Tacoma Doom " style="width:100%;"></div>
         
-        <div class="grid-item big-image-4"><img src="Images/skl2.jpg" alt="Seattle skyline"></div>
-        <div class="gird-item left-text2">
-<p style="font-size: 30px;">Seattle WA</p>
-<p>Text about seattle</p>
-<p style="font-size: 28px;">things to do in seattle</p>
-        </div>
+        <div class="grid-item big-image-4"><img src="Images/skl2.jpg" alt="Seattle skyline" style="width:100%"></div>
+        <div class="grid-item left-text2">
+<p style="font-size: 30px;color: rgb(96, 148, 218)">Seattle WA</p>
+<p>Seattle washingtion is known as the most important city in the state housing all the major sports stadiums, multyple companies and often people just refere to the city of Seattle instead of the State of Washington. the city of seattle is proud to be the home of so many of the worlds largest companoies. two of the biggest being Starbucks and Amazon.  </p>
+
+
+<div class="dropdown">
+    <button class="dropbtn">Things to do in Seattle </button>
+    <div class="dropdown-content">
+      <a href="https://www.spaceneedle.com/" target="_blank">Go up the iconic Space Needl</a>
+      <a href="https://www.minerslanding.com/?utm_source=imps.conversionlogix.com&utm_medium=search&utm_content=nb-things-to-do-ra&utm_campaign=st&utm_term=nbc&gclid=EAIaIQobChMIleeA-YPl_gIVhwCtBh15UQziEAAYASAAEgIy6_D_BwE" target="_blank">Walk along the Seatttle Waterfront</a>
+      <a href="https://www.pikeplacemarket.org/" target="_blank">Visit Pike place market</a>
+    </div>
+  </div>
+  
+       
+</div>
         <div class="grid-item medium-left-image-1"><img src="Images/sp1" alt="Seattle waterfront" style="width:100%"></div>
     </div>
 
