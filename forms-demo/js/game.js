@@ -73,6 +73,9 @@ function twotruthslie1(){
     else if (boneSelected){
         lieAnswer.innerHTML = fname + ", you are wrong!";
     }
+    else {
+        triviaAnswer.innerHTML = "Uh oh. Something went wrong!!!";
+    }
 }
 
 function truths1(){
