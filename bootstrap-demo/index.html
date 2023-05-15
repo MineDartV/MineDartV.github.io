@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Demo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-dark">
+    <!--bootstrap container for content and layout control-->
+    <div class="container-fluid bg-dark text-white">
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/burger king.png" alt="home icon" style="width: 40px;">
+            </a>
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Burgers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Fries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Drinks</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--bootstrap carousel!-->
+    </div>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!--first slide-->
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/burger.png" alt="burger king burger" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h3>Burger King Burger</h3>
+                    <p>We have the best burgers so buy them</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/fries.avif" alt="burger king fries" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h3>Burger King Fries</h3>
+                    <p>We have the best fries so buy them</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/drinks.jpg" alt="burger king drinks" class="d-block w-100">
+                <div class="carousel-caption">
+                    <h3>Burger King Drinks</h3>
+                    <p>We have the best drinks so buy them</p>
+                </div>
+            </div>
+        </div>
+                <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container-md bg-light text-blue p-4 m-2 pt-3">
+        <p>At Burger king, we serve all kinds of burgers, drinks, fries, and more. Burger King is truly one of the greatest burger places. If you haven't already tried our whopper, WHAT ARE YOU DOING? You should come and try the whopper as it is cheap, delicious, and will make you want to get it again! Bring the family, kids, even the dog! We will give you all burgers! Trust me, they are delicious. </p>
+    </div>
+<!--Let's add a bootstrap grid-->
+<div class="row text-white">
+    <div class="col-md-4">
+        <h2>BURGER king song</h2>
+        <p>AT BK HAVE IT YOUR WAY</p>
+        <a href="#" class="btn btn-primary" role="button">BURGER KING</a>
+    </div>
+    <div class="col-md-4">
+        <h2>Fries are cool</h2>
+    </div>
+    <div class="col-md-2">
+        <h2>burgers are cool</h2>
+    </div>
+    <div class="col-md-1">
+        <h2>Good Drinks</h2>
+    </div>
+    <div class="col-md-1">
+        <h2>Best food!</h2>
+    </div>
+</div>
+<div class="container-md text-white bg-primary m-5">
+    <p>If you want to see our official website or other burger places, just click the button dropdown below. </p>
+    <div class="dropdown">
+        <button type="button" class="btn btn-close-white dropdown-toggle" data-bs-toggle="dropdown">
+            Burgers
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://www.bk.com/?gclsrc=aw.ds&%243p=a_google_adwords&%24always_deeplink=false&~ad_set_id=142297164204&~campaign_id=18181268133&~channel=g&~keyword=burger%20king&~ad_id=618786282202&~campaign=BGK_BR-Core-Prospecting_PERF_NU_NU_NU_DGEC_F22_AO_USA_NAT_GCM_GAD_ODR_SEEM_AO_ENG_ENG_NU_21100106&utm_campaign=BGK_BR-Core-Prospecting_PERF_NU_NU_NU_DGEC_F22_AO_USA_NAT_GCM_GAD_ODR_SEEM_AO_ENG_ENG_NU_21100106&utm_source=google&utm_medium=CPC&gclid=Cj0KCQjwsIejBhDOARIsANYqkD2qRZ5yeZgFQ-zHUpl2kmGYiWui1VVQ4CLiuuJ13_G3kQeZPY1D7kMaAvIUEALw_wcB&_branch_match_id=1115336102070748039&_branch_referrer=H4sIAAAAAAAAA71R246bMBD9GnipQrChhK1kVY65NN3NjW22TV5GDriEYC6LYVH69QtkH%2FYLqpmRPHN0ZjxzLm1bq2%2Fz%2BblrUtHkWZkavK4NmZX5%2FA8r1nz1wNL2%2FF3DtlUTDmlVpVIAT%2FqqSZQ%2BlLns%2BU1BIkQ9sshfLpUYgeEhzzzOoWskuYxzNItqOBi873vjnBtxVYy5FaSxVE2sWR7vjURp2NG1hc8TUKKFLCHIxvhhgRwbm%2FaIxLyoeZaWE%2BYOhh0XWdYEXXhZCknSMcnFbfwmuS%2F3Zdzuo%2FFAdJC7cB3sYmziz03JMnyEZTRjVSNmu6ZStYjbgQk7Pwpgc%2FhwL%2FQZBBgD3cLhmcKG%2FoKQrSGkHmy9CJ59fz1i%2FiacYqBghEwTmY7etQX853Gq6ppYkLt8U6UQSdYVhO2YPpx%2FOAi7mo9sf%2B3VSlyXF29Lo5Wim%2BNr7uHX6PT1Jk5psJ%2F9%2B3GoJc6L8Jj97jL08rK32VPWdT%2BRBaGV78Vpd0TeIl9z%2BrY6%2BPSphz5e6neFyaTvO64lOC10AgAA">Burger King</a></li>
+            <li><a class="dropdown-item" href="https://www.mcdonalds.com/us/en-us.html">Mcdonalds</a></li>
+            <li><a class="dropdown-item" href="https://www.wendys.com/?utm_source=paid-search&utm_medium=search&utm_campaign=always-on&gclid=Cj0KCQjwsIejBhDOARIsANYqkD0NFAXihqTIaTN0m835Tvy3zNGyYgFXhvoj6ri81OI4tQa13zC7caMaAs7REALw_wcB">Wendy's</a></li>
+        </ul>
+    </div>
+</div>
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
