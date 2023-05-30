@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact aa Sushi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ifv8fwl.css">
+    <link rel="stylesheet" href="https://use.typekit.net/blr2gzp.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fnx5zbr.css">
+</head>
+<body style="background-color: rgb(205, 205, 205);">
+    <div class="container-fluid bg-black text-white">
+        <nav class="navbar navbar-expand-sm bg-black navbar-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/aasushi.webp" alt="home icon" style="width: 50px;">
+            </a>
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html" style="font-size: 20px;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html" style="font-size: 20px;">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html" style="font-size: 20px;">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" style="font-size: 20px;">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sushi.html" style="font-size: 20px;">Sushi</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="btn btn-danger m-2 " href="menu.html" role="button" style="font-size: 20px; ">Order Delivery</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <h1 class="mt-2">CONTACT US</h1>
+    <div class="container-fluid bg-white text-black">
+        <br>
+        <div class="row">
+            <div class="col">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16581.112911435626!2d-122.22071949294325!3d47.70816859189318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490126f54748391%3A0xd3bd61a1f3723ad0!2saa%20Sushi!5e0!3m2!1sen!2sus!4v1685409309136!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="m-3"></iframe>
+            </div>
+            <div class="col">
+                <h2 style="background-color: black; text-align: center; color: red;">CONTACT INFORMATION:</h2>
+                <p>Call us: (425)821-7989</p>
+                <p>Email: anthonychristianto@gmail.com</p>
+                <p>Location: 9730 NE 119th Way Kirkland, WA 98034</p>
+                <p>Open all week</p>
+                <p>Monday-Saturday = 11am - 8pm (PST)</p>
+                <p>Sunday = 11pm - 8pm (PST)</p>
+            </div>
+        </div>
+        <h2 style="background-color: black; text-align: center; color: red;">REVIEWS</h2>
+        <div class="row bg-white">
+            <div class="col" style="border: 5px black solid;">
+                <p style="text-align: center;">Submit Reviews:</p>
+                <hr style="height: 20px; background-color: black;">
+                <script>
+                    function review(){
+                        let reviewParagraph = document.getElementById("review");
+                        name1 = document.getElementById("name").value;
+                        let star1 = document.getElementById("stars").value;
+                        let like1 = document.getElementById("like").value;
+                        if (name1==="" || star1==="" || like1===""){
+                            alert("Please enter all the required information");
+                            return;
+                        }
+                        reviewParagraph.innerHTML = name1 + ":" + " " + star1 + "<br />" + like1
+                        alert("Thanks for reviewing our restaurant!");
+                    }
+                </script>
+                <form action="" id="review-form">
+                    <label for="name" style="text-align: left; font-size: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bolder;">Name:</label><br>
+                    <input type="text" name="name" id="name" style="width: 100%;"><br>
+                    <label for="stars" style="text-align: left; font-size: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bolder;">Rating (1-5): </label><br>
+                    <input type="text" name="stars" id="stars" style="width: 100%;"><br>
+                    <label for="like" style="text-align: left; font-size: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bolder;">What did you like?:</label><br>
+                    <input type="text" name="like" id="like" style="width: 100%;"><br>
+                </form>
+                <input type="button" value="SUBMIT REVIEW" onclick="review()">
+                <p id="review"></p>
+            </div>
+            <div class="col" style="border: 5px black solid;">
+                <p style="text-align: center;">Others Reviews:</p>
+                <hr style="height: 20px; background-color: black;">
+                <p>Jim: <img src="images/stars5.jpg" alt="5 stars" width="30%">
+                <br>
+                This place was amazing! Such delicious Sushi! I love coming here with my family on the weekends to relax and enjoy some delicious sushi! 
+                </p>
+                <p>Bob: <img src="images/stars5.jpg" alt="5 stars" width="30%">
+                <br>
+                This place very delicious. This was my first time having Sushi, but I can say, it was definitely worth it! I would recommend this to anyone that hasn't had Sushi before. If you have had sushi, still go! Its delicious!</p>
+                <p>Mark: <img src="images/stars5.jpg" alt="5 stars" width="30%">
+                <br>
+                Sushi, sushi, sushi. It was amazing. The servers were extremely polite and got you anything that you needed. We were able to get all different types of Sushi Rolls. We got Ikura, California Rolls, Cucumber rolls and so much more. This place has so much to offer and it is definitely worth trying!</p>
+            </div>
+        </div>
+    </div>
+    <hr style="height: 30px; background-color: black;">
+    <div class="container-fluid bg-black">
+        <p style="text-align: center; color: white;">Copyright @2023 aa Sushi All Rights Reserved</p>
+    </div>
+</body>
+</html>
