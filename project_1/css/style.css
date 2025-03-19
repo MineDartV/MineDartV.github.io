@@ -1,0 +1,20 @@
+h1{
+    font-family: cursive;
+    font-weight: 1000;
+    text-align: center;
+    color: white;
+}
+
+.column{
+    width: 33.33%;
+    float: left;
+    padding: 5px;
+}
+
+.centered{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
